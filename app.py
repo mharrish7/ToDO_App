@@ -3,7 +3,7 @@ import json
 from flask import Flask,render_template,request,jsonify
 from flask_pymongo import PyMongo,ObjectId
 
-DB_URL = 'mongodb+srv://Harrish7:mharrish7@cluster0.hrcej.mongodb.net/test?retryWrites=true&w=majority'
+DB_URL = 'mongodb+srv://{}:{}@cluster0.hrcej.mongodb.net/{}?retryWrites=true&w=majority'
 
 app = Flask(__name__)
 mongo = PyMongo(app,uri = DB_URL)
